@@ -22,7 +22,7 @@ Follow these steps to build a new Docker image with your custom theme:
 3. Run the following command to build the Docker container and apply your custom theme:
 
 ```bash
-sh scripts/build.sh <theme> <version>
+sh scripts/build.sh <THEME> <VERSION>
 ```
 
 | Parameter | Description                                                                                                                    |
