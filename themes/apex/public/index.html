@@ -1,46 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta id="meta-description" name="description" content="">
-    <!-- <script defer="defer" src="/config.js"></script> -->
-    <title><%= htmlWebpackPlugin.options.title %></title>
-    <link rel="stylesheet" href="/assets/css/esa-header.css">
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but STAC Browser doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta id="meta-description" name="description" content="">
+  <!-- <script defer="defer" src="/config.js"></script> -->
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+<noscript>
+  <strong>We're sorry but STAC Browser doesn't work properly without JavaScript enabled. Please enable it to
+    continue.</strong>
+</noscript>
+<div class="blur"></div>
 
-    <div class="wrapper">
+<div class="wrapper container">
 
 
-      <!-----------------------------------------------------------
-      -- ESA Header module v2
-      -- Date: 23-10-2020
-      ------------------------------------------------------------>
-      <section id="esa-header" class="esa-header">
+  <!-----------------------------------------------------------
+  -- ESA Header module v2
+  -- Date: 23-10-2020
+  ------------------------------------------------------------>
 
-        <div class="esa-header__left">
-          <img class="esa-header__title" src="/assets/ESA_Title.svg" alt="ESA title">
-        </div>
+      <div class="c-header__top">
+        <div class="c-header__navigate">
+          <div class="c-hamburger js-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
 
-        <div class="esa-header__right">
-
-          <a class="esa-header__link" href="https://www.esa.int">
-            <img class="esa-header__logo" src="/assets/ESA_Logo.svg" alt="ESA logo">
+          <a class="c-header__esa-text" href="#">
+            <img src="/assets/img/logos/text-esa.svg" alt="The European Space Agency">
           </a>
-
         </div>
 
-      </section>
-      <!-- End of module ----------------------------------------->
+        <div>
+          <div class="c-header__esa">
+            <img src="/assets//img/logos/logo-esa.svg" alt="ESA">
+          </div>
+        </div>
+      </div>
+
+      <div class="c-header__bottom">
+        <a href="/" class="c-header__logo">
+          APEx Data Catalogue
+        </a>
+
+        <div class="c-header__nav">
+          <ul>
+            <li><a href="index.html">APEx</a></li>
+            <li class="has-children">
+              <a href="services.html">Services</a>
+
+              <div class="c-sub-menu js-mega-menu">
+                <div class="c-sub-menu__left">
+                  <h4>Services</h4>
+
+                  <div class="c-sub-menu__topics">
+                    <h5 class="js-mega-menu-topic" data-index="1">Tool creation</h5>
+                    <h5 class="js-mega-menu-topic" data-index="2">Algorithm services</h5>
+                  </div>
+                </div>
+
+                <div class="c-sub-menu__right">
+                  <div class="c-sub-menu__content js-mega-menu-content" aria-hidden="false"
+                       data-index="1">
+                    <h4>Tool creation</h4>
+
+                    <div class="c-sub-menu__item">
+                      <img src="/assets//img/icons/icon-monitoring.svg" alt="Icon">
+                      <h6>
+                        <a href="service-detail.html" class="stretched-link">
+                          Tool creation
+                        </a>
+                      </h6>
+                      <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="c-sub-menu__item">
+                      <img src="/assets//img/icons/icon-monitoring.svg" alt="Icon">
+                      <h6>
+                        <a href="service-detail.html" class="stretched-link">
+                          Tool creation
+                        </a>
+                      </h6>
+                      <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="c-sub-menu__item">
+                      <img src="/assets//img/icons/icon-monitoring.svg" alt="Icon">
+                      <h6>
+                        <a href="service-detail.html" class="stretched-link">
+                          Tool creation
+                        </a>
+                      </h6>
+                      <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="c-sub-menu__item">
+                      <img src="/assets//img/icons/icon-monitoring.svg" alt="Icon">
+                      <h6>
+                        <a href="service-detail.html" class="stretched-link">
+                          Tool creation
+                        </a>
+                      </h6>
+                      <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="c-sub-menu__item">
+                      <img src="/assets//img/icons/icon-monitoring.svg" alt="Icon">
+                      <h6>
+                        <a href="service-detail.html" class="stretched-link">
+                          Tool creation
+                        </a>
+                      </h6>
+                      <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="c-sub-menu__item">
+                      <img src="/assets//img/icons/icon-monitoring.svg" alt="Icon">
+                      <h6>
+                        <a href="service-detail.html" class="stretched-link">
+                          Tool creation
+                        </a>
+                      </h6>
+                      <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="c-sub-menu__item">
+                      <img src="/assets//img/icons/icon-monitoring.svg" alt="Icon">
+                      <h6>
+                        <a href="service-detail.html" class="stretched-link">
+                          Tool creation
+                        </a>
+                      </h6>
+                      <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="c-sub-menu__item">
+                      <img src="/assets//img/icons/icon-monitoring.svg" alt="Icon">
+                      <h6>
+                        <a href="service-detail.html" class="stretched-link">
+                          Tool creation
+                        </a>
+                      </h6>
+                      <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
+                    </div>
+                  </div>
+                  <div class="c-sub-menu__content js-mega-menu-content" aria-hidden="true" data-index="2">
+                    <h4>Algorithm services</h4>
+
+                    <div class="c-sub-menu__item">
+                      <img src="/assets//img/icons/icon-reach.svg" alt="Icon">
+                      <h6>
+                        <a href="service-detail.html" class="stretched-link">
+                          Algorithm services
+                        </a>
+                      </h6>
+                      <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="c-sub-menu__item">
+                      <img src="/assets//img/icons/icon-reach.svg" alt="Icon">
+                      <h6>
+                        <a href="service-detail.html" class="stretched-link">
+                          Algorithm services
+                        </a>
+                      </h6>
+                      <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="c-sub-menu__item">
+                      <img src="/assets//img/icons/icon-reach.svg" alt="Icon">
+                      <h6>
+                        <a href="service-detail.html" class="stretched-link">
+                          Algorithm services
+                        </a>
+                      </h6>
+                      <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="c-sub-menu__item">
+                      <img src="/assets//img/icons/icon-reach.svg" alt="Icon">
+                      <h6>
+                        <a href="service-detail.html" class="stretched-link">
+                          Algorithm services
+                        </a>
+                      </h6>
+                      <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="c-sub-menu__item">
+                      <img src="/assets//img/icons/icon-reach.svg" alt="Icon">
+                      <h6>
+                        <a href="service-detail.html" class="stretched-link">
+                          Algorithm services
+                        </a>
+                      </h6>
+                      <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="c-sub-menu__item">
+                      <img src="/assets//img/icons/icon-reach.svg" alt="Icon">
+                      <h6>
+                        <a href="service-detail.html" class="stretched-link">
+                          Algorithm services
+                        </a>
+                      </h6>
+                      <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="c-sub-menu__item">
+                      <img src="/assets//img/icons/icon-reach.svg" alt="Icon">
+                      <h6>
+                        <a href="service-detail.html" class="stretched-link">
+                          Algorithm services
+                        </a>
+                      </h6>
+                      <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="c-sub-menu__item">
+                      <img src="/assets//img/icons/icon-reach.svg" alt="Icon">
+                      <h6>
+                        <a href="service-detail.html" class="stretched-link">
+                          Algorithm services
+                        </a>
+                      </h6>
+                      <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="contact.html">Resources</a></li>
+            <li><a href="contact.html">Cases</a></li>
+            <li><a href="contact.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="c-header__contact">
+          <a href="contact.html" class="btn btn-primary">Contact us</a>
+        </div>
+      </div>
+  <!-- End of module ----------------------------------------->
 
 
-    </div>
+</div>
 
-    <div id="stac-browser"></div>
-  </body>
+<div id="stac-browser"></div>
+</body>
 </html>

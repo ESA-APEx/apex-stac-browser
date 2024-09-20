@@ -1,0 +1,42 @@
+
+body {
+  background-color: var(--darkblue);
+  font-family: var(--font-family);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+
+  @include media-breakpoint-only(xxxl) {
+    max-width: 75vw;
+  }
+}
+
+.blur {
+  position: absolute;
+  width: 100vw;
+  height: 2200px;
+  top: 100%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: -1;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 1430px;
+    aspect-ratio: 2;
+    right: 0;
+    top: 50%;
+    transform: translateX(15%) translateY(-15%) rotate(-10deg);
+    border-radius: 100%;
+    mix-blend-mode: normal;
+    filter: blur(336.075px);
+    background-color: var(--lightgreen);
+    z-index: -1;
+    opacity: .6;
+  }
+}

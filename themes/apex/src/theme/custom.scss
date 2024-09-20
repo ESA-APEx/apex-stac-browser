@@ -1,143 +1,15 @@
-$callout-bg: rgba(255, 255, 255, 0.16);
-$border-radius: 10px;
+@import "./components/header";
+@import "./components/sub-menu";
+@import "./components/buttons";
+@import "./components/popover";
+@import "./components/page";
+@import "./components/browser";
 
 
-// BODY
-body {
-  background: linear-gradient(0deg, map-get($theme-colors, "primary") 0%, map-get($theme-colors, "tertiary") 50%, map-get($theme-colors, "primary") 100%) no-repeat fixed;
-}
-
-.popover {
-  .popover-header, .popover-body, h1, h2, h3, h4, h5, h6 {
-    color: black !important;
-  }
-
-  .popover-body {
-    .input-group .btn {
-      padding: 0.25rem 0.5rem !important;
-    }
-
-    .row {
-      margin: 0.5rem 0;
-    }
-
-  }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'ESANotes', Arial, sans-serif;
-  color: white !important;
-}
-
-h2 {
-  background-color: $callout-bg;
-  padding: .5rem 1rem;
-  border-radius: $border-radius;
-}
 
 
-#stac-browser {
-  padding-top: 2.5rem;
 
-  .metadata-card {
-    background-color: transparent !important;
-    box-shadow: none !important;
-    border: 1px solid $callout-bg !important;
-    border-spacing: 0 !important;
-    border-collapse: separate !important;
 
-    .card-title {
-      background-color: $callout-bg;
-    }
 
-    section.metadata-rows, .card-title {
-      padding: 0.5rem;
-    }
 
-    &:hover {
-      box-shadow: none !important;
-    }
 
-    .border {
-      border: none !important;
-    }
-
-    .row {
-      background-color: transparent !important;
-      border-top-color: $callout-bg !important;
-    }
-
-    .metadata-table {
-      th {
-        background-color: #39787d !important;
-        border: none !important;
-      }
-    }
-  }
-
-  .expandable-card {
-    .card-body {
-      background-color: $callout-bg !important;
-    }
-  }
-
-  .card {
-    background-color: $callout-bg;
-    border: none;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-    height: 100%;
-
-    &:hover {
-      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-
-      h4 {
-        a {
-          text-decoration: none;
-        }
-      }
-
-    }
-
-    h4 {
-      a {
-        color: white;
-      }
-    }
-
-    .datetime {
-      color: white;
-      font-style: italic;
-    }
-
-    .text-muted {
-      color: lightgray !important;
-      font-size: small;
-    }
-  }
-
-  .btn {
-    background-color: map-get($theme-colors, "primary");
-    color: white;
-    padding: 0.5rem 1rem;
-
-    &:hover, &.active {
-      background-color: $callout-bg;
-    }
-  }
-
-  .btn-outline-primary, .btn-group .btn {
-    border-color: $callout-bg;
-  }
-
-  .badge {
-    padding: 0.25rem 0.5rem;
-  }
-
-  .b-sidebar-body {
-    .btn {
-      background-color: transparent;
-      color: map-get($theme-colors, "primary");
-    }
-  }
-}

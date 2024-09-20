@@ -1,0 +1,18 @@
+.popover {
+  font-family: var(--font-family);
+
+  .popover-header .popover-header.h3, .popover-body, h1, h2, h3, h4, h5, h6 {
+    color: var(--black) !important;
+  }
+
+  .popover-body {
+    .input-group .btn {
+      padding: 0.25rem 0.5rem !important;
+    }
+
+    .row {
+      margin: 0.5rem 0;
+    }
+
+  }
+}

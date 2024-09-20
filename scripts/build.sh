@@ -32,7 +32,7 @@ cp -r themes/$theme/* $temp_dir
 
 log "Creating new image for the STAC browser"
 cd $temp_dir
-docker build -t "apex-$theme-stac-browser" .
+docker build --no-cache -t "apex-$theme-stac-browser" .
 
 log "Cleaning up temporary direction"
 rm -rf $temp_dir
