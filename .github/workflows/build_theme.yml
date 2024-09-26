@@ -1,0 +1,100 @@
+name: Build APEx STAC browser
+
+on:
+  workflow_call:
+    inputs:
+      theme:
+        description: 'The name of the theme to build'
+        required: true
+        type: string
+  workflow_dispatch:
+    inputs:
+      theme:
+        description: 'The name of the theme to build'
+        required: true
+        type: string
+
+
+env:
+  DOCKER_REGISTRY_REGION: eu-nl
+  DOCKER_REGISTRY_URL: swr.eu-nl.otc.t-systems.com
+  DOCKER_REGISTRY_BUCKET: vito
+  THEME: ${{ github.event.inputs.theme }}
+  TEMP_FOLDER: /tmp/stac-browser/${{ github.event.inputs.theme }}
+
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the current repository
+        uses: actions/checkout@v3
+
+      - name: Read version from version.txt
+        id: get_version
+        run: |
+          version_file="themes/$THEME/version.txt"
+          
+          if [[ -f "$version_file" ]]; then
+          version=$(cat $version_file)
+          echo "Theme version: $version"
+          echo "VERSION=$version" >> $GITHUB_ENV
+          else
+          echo "Version file not found, exiting."
+          exit 1
+          fi
+
+      - name: Clone external repository
+        env:
+          REPO_URL: https://github.com/radiantearth/stac-browser.git
+        run: |
+          git clone $REPO_URL $TEMP_FOLDER
+
+      - name: Copy theme to external repository
+        run: |
+          cp -R themes/$THEME/. $TEMP_FOLDER
+
+      - name: Prepare Docker envs
+        run: |
+          DOCKER_IMAGE_VERSION=${{env.VERSION}}
+          DOCKER_IMAGE_NAME=stac-browser-${THEME}
+          
+          echo "DOCKER_IMAGE_NAME=${DOCKER_IMAGE_NAME}" >> $GITHUB_ENV
+          echo "IMAGE_NAME=${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}" >> $GITHUB_ENV
+          echo "IMAGE_TAG_RELEASE=${DOCKER_REGISTRY_URL}/${DOCKER_REGISTRY_BUCKET}/${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}" >> $GITHUB_ENV
+          echo "IMAGE_TAG_LATEST=${DOCKER_REGISTRY_URL}/${DOCKER_REGISTRY_BUCKET}/${DOCKER_IMAGE_NAME}:latest" >> $GITHUB_ENV
+
+      - name: Build docker image
+        run: |
+          cd $TEMP_FOLDER
+          docker build . --tag $IMAGE_NAME
+
+      - name: Tag the image
+        run: |
+            docker tag $IMAGE_NAME $IMAGE_TAG_RELEASE
+            docker tag $IMAGE_NAME $IMAGE_TAG_LATEST
+
+      - name: Docker login
+        env:
+          DOCKER_ACCESS_KEY: ${{ secrets.DOCKER_ACCESS_KEY }}
+          DOCKER_SECRET_KEY: ${{ secrets.DOCKER_SECRET_KEY }}
+        run: |
+          LOGIN_KEY=`printf "$DOCKER_ACCESS_KEY" | openssl dgst -binary -sha256 -hmac "$DOCKER_SECRET_KEY" | od -An -vtx1 | sed 's/[ \n]//g' | sed 'N;s/\n//'`
+          docker login -u ${DOCKER_REGISTRY_REGION}@${DOCKER_ACCESS_KEY} -p ${LOGIN_KEY} ${DOCKER_REGISTRY_URL}
+
+      - name: Push image to registry
+        run: |
+          docker push $IMAGE_TAG_RELEASE
+          docker push $IMAGE_TAG_LATEST
+
+      - name: Cleanup
+        run: |
+          rm -rf $TEMP_FOLDER
+          docker rmi $IMAGE_TAG_RELEASE
+          docker rmi $IMAGE_TAG_LATEST
+          docker rmi $IMAGE_NAME
