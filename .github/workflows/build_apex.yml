@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'themes/apex/**'
+  workflow_dispatch:
 
 jobs:
   call-build-theme:
