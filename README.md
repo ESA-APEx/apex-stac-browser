@@ -12,6 +12,17 @@ the [theming guide](https://github.com/radiantearth/stac-browser?tab=readme-ov-f
 code from original repository. Once you've created the new theme locally, you can proceed to the next step, where we'll
 build the Docker image.
 
+### Setting up a build pipeline
+
+To create an automated build for your new theme, you can copy the existing `.github/workflows/build_apex.yml` file and 
+modify the following fields:
+
+* `paths`: This should point to your new theme to ensure that a new build is triggered only when changes are made to your theme.
+* `theme`: This should contain the name of your theme.
+
+By doing this, a new Docker image will be built every time a change is made to the corresponding theme.
+
+
 ## Building the Docker Image
 
 Follow these steps to build a new Docker image with your custom theme:
