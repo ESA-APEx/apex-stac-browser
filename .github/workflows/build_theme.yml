@@ -22,12 +22,6 @@ env:
   THEME: ${{ github.event.inputs.theme }}
   TEMP_FOLDER: /tmp/stac-browser/${{ github.event.inputs.theme }}
 
-
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
