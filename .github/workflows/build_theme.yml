@@ -1,4 +1,4 @@
-name: Build APEx STAC browser
+name: Build themed STAC browser
 
 on:
   workflow_call:
