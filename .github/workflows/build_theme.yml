@@ -70,8 +70,8 @@ jobs:
 
       - name: Tag the image
         run: |
-            docker tag $IMAGE_NAME $IMAGE_TAG_RELEASE
-            docker tag $IMAGE_NAME $IMAGE_TAG_LATEST
+          docker tag $IMAGE_NAME $IMAGE_TAG_RELEASE
+          docker tag $IMAGE_NAME $IMAGE_TAG_LATEST
 
       - name: Docker login
         env:
