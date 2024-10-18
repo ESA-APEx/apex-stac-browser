@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta id="meta-description" name="description" content="">
-    <!-- <script defer="defer" src="/config.js"></script> -->
-    <title><%= htmlWebpackPlugin.options.title %></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta id="meta-description" name="description" content="">
+  <!-- <script defer="defer" src="/config.js"></script> -->
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <script type="application/javascript" src="/assets/js/menu.js"></script>
 </head>
 <body class="container">
 <noscript>
-    <strong>We're sorry but STAC Browser doesn't work properly without JavaScript enabled. Please enable it to
-        continue.</strong>
+  <strong>We're sorry but STAC Browser doesn't work properly without JavaScript enabled. Please enable it to
+    continue.</strong>
 </noscript>
 <div class="blur"></div>
 
@@ -22,304 +23,354 @@
 ------------------------------------------------------------>
 
 <div class="c-header__top">
-    <div class="c-header__navigate">
-        <div class="c-hamburger js-hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <a class="c-header__esa-text" href="#">
-            <img src="/assets/img/logos/text-esa.svg" alt="The European Space Agency">
-        </a>
+  <div class="c-header__navigate">
+    <div class="c-hamburger js-hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
 
-    <div>
-        <div class="c-header__esa">
-            <img src="/assets//img/logos/logo-esa.svg" alt="ESA">
-        </div>
+    <a class="c-header__esa-text" href="#">
+      <img src="/assets/img/logos/text-esa.svg" alt="The European Space Agency">
+    </a>
+  </div>
+
+  <div>
+    <div class="c-header__esa">
+      <img src="/assets//img/logos/logo-esa.svg" alt="ESA">
     </div>
+  </div>
 </div>
 
 <div class="c-header__bottom">
-    <a href="/" class="c-header__logo">
-        APEx Data Catalogue
-    </a>
+  <a href="https://apex-esa.drupal.int.vito.be/" class="c-header__logo">APEx Data Catalogue</a>
 
-    <div class="c-header__nav">
-        <ul>
-            <li><a href="index.html">APEx</a></li>
+  <div class="c-header__nav">
+    <div class="region region-nav-main">
+      <nav role="navigation" aria-labelledby="block-vitotheme-main-navigation-menu" id="block-vitotheme-main-navigation"
+           class="block block-menu navigation menu--main">
+
+
+        <!-- Desktop Menu -->
+        <div class="navbar-nav navbar-nav-hover align-items-lg-center nav navbar-main d-none d-lg-block">
+  <span class="mobile-menu-trigger" data-bs-toggle="modal" data-bs-target="#mobileMenuModal">
+    <span class="icon-menu"></span>
+  </span>
+          <span class="overlay-gradient-white"></span>
+          <ul data-block="nav_main" class="menu menu-bar d-flex nav-level-0">
+
+
             <li class="has-children">
-                <a href="services.html">Services</a>
+              <a href="https://apex-esa.drupal.int.vito.be/services" class="menu-link menu-bar-link"
+                 data-drupal-link-system-path="node/4">Services</a>
 
-                <div class="c-sub-menu js-mega-menu">
-                    <div class="c-sub-menu__left">
-                        <h4>Services</h4>
-
-                        <div class="c-sub-menu__topics">
-                            <h5 class="js-mega-menu-topic" data-index="1">Tool creation</h5>
-                            <h5 class="js-mega-menu-topic" data-index="2">Algorithm services</h5>
-                        </div>
-                    </div>
-
-                    <div class="c-sub-menu__right">
-                        <div class="c-sub-menu__content js-mega-menu-content" aria-hidden="false"
-                             data-index="1">
-                            <h4>Tool creation</h4>
-
-                            <div class="c-sub-menu__item">
-                                <img src="/assets//img/icons/icon-monitoring.svg" alt="Icon">
-                                <h6>
-                                    <a href="service-detail.html" class="stretched-link">
-                                        Tool creation
-                                    </a>
-                                </h6>
-                                <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
-                            </div>
-
-                            <div class="c-sub-menu__item">
-                                <img src="/assets//img/icons/icon-monitoring.svg" alt="Icon">
-                                <h6>
-                                    <a href="service-detail.html" class="stretched-link">
-                                        Tool creation
-                                    </a>
-                                </h6>
-                                <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
-                            </div>
-
-                            <div class="c-sub-menu__item">
-                                <img src="/assets//img/icons/icon-monitoring.svg" alt="Icon">
-                                <h6>
-                                    <a href="service-detail.html" class="stretched-link">
-                                        Tool creation
-                                    </a>
-                                </h6>
-                                <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
-                            </div>
-
-                            <div class="c-sub-menu__item">
-                                <img src="/assets//img/icons/icon-monitoring.svg" alt="Icon">
-                                <h6>
-                                    <a href="service-detail.html" class="stretched-link">
-                                        Tool creation
-                                    </a>
-                                </h6>
-                                <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
-                            </div>
-
-                            <div class="c-sub-menu__item">
-                                <img src="/assets//img/icons/icon-monitoring.svg" alt="Icon">
-                                <h6>
-                                    <a href="service-detail.html" class="stretched-link">
-                                        Tool creation
-                                    </a>
-                                </h6>
-                                <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
-                            </div>
-
-                            <div class="c-sub-menu__item">
-                                <img src="/assets//img/icons/icon-monitoring.svg" alt="Icon">
-                                <h6>
-                                    <a href="service-detail.html" class="stretched-link">
-                                        Tool creation
-                                    </a>
-                                </h6>
-                                <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
-                            </div>
-
-                            <div class="c-sub-menu__item">
-                                <img src="/assets//img/icons/icon-monitoring.svg" alt="Icon">
-                                <h6>
-                                    <a href="service-detail.html" class="stretched-link">
-                                        Tool creation
-                                    </a>
-                                </h6>
-                                <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
-                            </div>
-
-                            <div class="c-sub-menu__item">
-                                <img src="/assets//img/icons/icon-monitoring.svg" alt="Icon">
-                                <h6>
-                                    <a href="service-detail.html" class="stretched-link">
-                                        Tool creation
-                                    </a>
-                                </h6>
-                                <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-                        <div class="c-sub-menu__content js-mega-menu-content" aria-hidden="true" data-index="2">
-                            <h4>Algorithm services</h4>
-
-                            <div class="c-sub-menu__item">
-                                <img src="/assets//img/icons/icon-reach.svg" alt="Icon">
-                                <h6>
-                                    <a href="service-detail.html" class="stretched-link">
-                                        Algorithm services
-                                    </a>
-                                </h6>
-                                <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
-                            </div>
-
-                            <div class="c-sub-menu__item">
-                                <img src="/assets//img/icons/icon-reach.svg" alt="Icon">
-                                <h6>
-                                    <a href="service-detail.html" class="stretched-link">
-                                        Algorithm services
-                                    </a>
-                                </h6>
-                                <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
-                            </div>
-
-                            <div class="c-sub-menu__item">
-                                <img src="/assets//img/icons/icon-reach.svg" alt="Icon">
-                                <h6>
-                                    <a href="service-detail.html" class="stretched-link">
-                                        Algorithm services
-                                    </a>
-                                </h6>
-                                <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
-                            </div>
-
-                            <div class="c-sub-menu__item">
-                                <img src="/assets//img/icons/icon-reach.svg" alt="Icon">
-                                <h6>
-                                    <a href="service-detail.html" class="stretched-link">
-                                        Algorithm services
-                                    </a>
-                                </h6>
-                                <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
-                            </div>
-
-                            <div class="c-sub-menu__item">
-                                <img src="/assets//img/icons/icon-reach.svg" alt="Icon">
-                                <h6>
-                                    <a href="service-detail.html" class="stretched-link">
-                                        Algorithm services
-                                    </a>
-                                </h6>
-                                <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
-                            </div>
-
-                            <div class="c-sub-menu__item">
-                                <img src="/assets//img/icons/icon-reach.svg" alt="Icon">
-                                <h6>
-                                    <a href="service-detail.html" class="stretched-link">
-                                        Algorithm services
-                                    </a>
-                                </h6>
-                                <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
-                            </div>
-
-                            <div class="c-sub-menu__item">
-                                <img src="/assets//img/icons/icon-reach.svg" alt="Icon">
-                                <h6>
-                                    <a href="service-detail.html" class="stretched-link">
-                                        Algorithm services
-                                    </a>
-                                </h6>
-                                <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
-                            </div>
-
-                            <div class="c-sub-menu__item">
-                                <img src="/assets//img/icons/icon-reach.svg" alt="Icon">
-                                <h6>
-                                    <a href="service-detail.html" class="stretched-link">
-                                        Algorithm services
-                                    </a>
-                                </h6>
-                                <p>Subtext max 2 lines - Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-                    </div>
+              <div class="c-sub-menu js-mega-menu">
+                <div class="c-sub-menu__left">
+                  <h4>Services</h4>
+                  <div class="c-sub-menu__topics">
+                    <h5 class="js-mega-menu-topic" data-index="1">Algorithm services</h5>
+                    <h5 class="js-mega-menu-topic" data-index="2">Tool creation</h5>
+                  </div>
                 </div>
+                <div class="c-sub-menu__right">
+                  <div class="c-sub-menu__content js-mega-menu-content" aria-hidden="false" data-index="1">
+                    <h4>Algorithm services</h4>
+                    <div class="c-sub-menu__item">
+
+
+                      <img alt=""
+                           src="https://apex-esa.drupal.int.vito.be/sites/apex/files/2024-10/noun-cloud-code-4432145-F47920.svg">
+
+
+                      <h6>
+                        <a href="https://apex-esa.drupal.int.vito.be/services/algorithm-hosting" class="stretched-link">
+                          Algorithm Hosting
+                        </a>
+                      </h6>
+                    </div>
+                    <div class="c-sub-menu__item">
+
+
+                      <img alt=""
+                           src="https://apex-esa.drupal.int.vito.be/sites/apex/files/2024-10/noun-code-processor-7154480-FBAB18.svg">
+
+
+                      <h6>
+                        <a href="https://apex-esa.drupal.int.vito.be/services/algorithm-enhancement"
+                           class="stretched-link">
+                          Algorithm Enhancement
+                        </a>
+                      </h6>
+                    </div>
+                    <div class="c-sub-menu__item">
+
+
+                      <img alt=""
+                           src="https://apex-esa.drupal.int.vito.be/sites/apex/files/2024-10/Algorithm%20Upscaling%20%20_%20noun-upscale-6292345-008E7A.svg">
+
+
+                      <h6>
+                        <a href="https://apex-esa.drupal.int.vito.be/services/algorithm-upscaling"
+                           class="stretched-link">
+                          Algorithm Upscaling
+                        </a>
+                      </h6>
+                    </div>
+                    <div class="c-sub-menu__item">
+
+
+                      <img alt=""
+                           src="https://apex-esa.drupal.int.vito.be/sites/apex/files/2024-10/noun-comparison-6476897-00619E.svg">
+
+
+                      <h6>
+                        <a href="https://apex-esa.drupal.int.vito.be/services/algorithm-intercomparison"
+                           class="stretched-link">
+                          Algorithm Intercomparison
+                        </a>
+                      </h6>
+                    </div>
+                    <div class="c-sub-menu__item">
+
+
+                      <img alt=""
+                           src="https://apex-esa.drupal.int.vito.be/sites/apex/files/2024-10/noun-cloud-tool-5172299-00AE9D.svg">
+
+
+                      <h6>
+                        <a href="https://apex-esa.drupal.int.vito.be/services/toolbox-cloudification"
+                           class="stretched-link">
+                          Toolbox Cloudification
+                        </a>
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="c-sub-menu__content js-mega-menu-content" aria-hidden="true" data-index="2">
+                    <h4>Tool creation</h4>
+                    <div class="c-sub-menu__item">
+
+
+                      <img alt=""
+                           src="https://apex-esa.drupal.int.vito.be/sites/apex/files/2024-10/noun-internet-forum-6263703-FBAB18.svg">
+
+
+                      <h6>
+                        <a href="https://apex-esa.drupal.int.vito.be/services/user-form" class="stretched-link">
+                          User form
+                        </a>
+                      </h6>
+                    </div>
+                    <div class="c-sub-menu__item">
+
+
+                      <img alt=""
+                           src="https://apex-esa.drupal.int.vito.be/sites/apex/files/2024-10/Geospatial%20Explorer%20_%20noun-planet-5054191-008E7A.svg">
+
+
+                      <h6>
+                        <a href="https://apex-esa.drupal.int.vito.be/services/geospatial-explorer"
+                           class="stretched-link">
+                          Geospatial Explorer
+                        </a>
+                      </h6>
+                    </div>
+                    <div class="c-sub-menu__item">
+
+
+                      <img alt=""
+                           src="https://apex-esa.drupal.int.vito.be/sites/apex/files/2024-10/noun-manual-book-4118546-00619E.svg">
+
+
+                      <h6>
+                        <a href="https://apex-esa.drupal.int.vito.be/services/documentation-hub" class="stretched-link">
+                          Documentation hub
+                        </a>
+                      </h6>
+                    </div>
+                    <div class="c-sub-menu__item">
+
+
+                      <img alt=""
+                           src="https://apex-esa.drupal.int.vito.be/sites/apex/files/2024-10/Catalogue%20_%20noun-course-catalogue-5992577-008E7A.svg">
+
+
+                      <h6>
+                        <a href="https://apex-esa.drupal.int.vito.be/services/product-catalogue" class="stretched-link">
+                          Product catalogue
+                        </a>
+                      </h6>
+                    </div>
+                    <div class="c-sub-menu__item">
+
+
+                      <img alt=""
+                           src="https://apex-esa.drupal.int.vito.be/sites/apex/files/2024-10/noun-cloud-configure-2513279-00619E.svg">
+
+
+                      <h6>
+                        <a href="https://apex-esa.drupal.int.vito.be/services/user-workspace" class="stretched-link">
+                          User workspace
+                        </a>
+                      </h6>
+                    </div>
+                    <div class="c-sub-menu__item">
+
+
+                      <img alt=""
+                           src="https://apex-esa.drupal.int.vito.be/sites/apex/files/2024-10/noun-coding-7221629-F47920.svg">
+
+
+                      <h6>
+                        <a href="https://apex-esa.drupal.int.vito.be/services/interactive-development-environment"
+                           class="stretched-link">
+                          Interactive Development Environment
+                        </a>
+                      </h6>
+                    </div>
+                    <div class="c-sub-menu__item">
+
+
+                      <img alt=""
+                           src="https://apex-esa.drupal.int.vito.be/sites/apex/files/2024-10/noun-internet-7110830-FBAB18.svg">
+
+
+                      <h6>
+                        <a href="https://apex-esa.drupal.int.vito.be/services/web-portal" class="stretched-link">
+                          Web portal
+                        </a>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
             </li>
-            <li><a href="solutions.html">Solutions</a></li>
-            <li><a href="contact.html">Resources</a></li>
-            <li><a href="contact.html">Cases</a></li>
-            <li><a href="contact.html">Support</a></li>
-        </ul>
+
+
+            <li>
+              <a href="https://esa-apex.github.io/apex_documentation/" class="menu-link menu-bar-link">Documentation</a>
+
+
+            </li>
+
+
+            <li>
+              <a href="https://apex-esa.drupal.int.vito.be/frequently-asked-questions" class="menu-link menu-bar-link"
+                 data-drupal-link-system-path="node/9">FAQ</a>
+
+
+            </li>
+
+
+            <li>
+              <a href="https://apex-esa.drupal.int.vito.be/about-apex" class="menu-link menu-bar-link"
+                 data-drupal-link-system-path="node/5">About APEx</a>
+
+
+            </li>
+
+          </ul>
+
+
+        </div>
+
+
+      </nav>
+
     </div>
 
-    <div class="c-header__contact">
-        <a href="contact.html" class="btn btn-primary">Contact us</a>
+  </div>
+
+  <div class="c-header__contact">
+    <a href="https://apex-esa.drupal.int.vito.be/contact" class="btn btn-primary">Contact us</a>
+  </div>
+
+  <div class="c-hamburger__wrapper">
+    <div class="c-hamburger js-hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+  </div>
+
 </div>
 
 
 <div id="stac-browser"></div>
 
-<footer class="c-footer">
-    <div class="container">
-        <div class="c-footer__top">
-            <div class="c-footer__left">
-                <a href="#" class="c-footer__logo">
-                    APEx
-                </a>
+<div class="c-footer">
+  <div class="container">
+    <div class="c-footer__top">
+      <div class="c-footer__left">
+        <a href="#" class="c-footer__logo">
+          APEx
+        </a>
 
-                <div class="c-footer__baseline">
-                    Application Propagation Environments
-                </div>
-
-                <div class="c-footer__socials">
-                    <a href="#" class="c-footer__social">
-                        <img src="/assets/img/logos/logo-linkedin.svg" alt="LinkedIn">
-                    </a>
-                    <a href="#" class="c-footer__social">
-                        <img src="/assets/img/logos/logo-youtube.svg" alt="YouTube">
-                    </a>
-                    <a href="#" class="c-footer__social">
-                        <img src="/assets/img/logos/logo-x.svg" alt="X">
-                    </a>
-                </div>
-
-                <a href="contact.html" class="btn btn-primary">
-                    Contact us
-                </a>
-            </div>
-
-            <div class="c-footer__right">
-                <div class="c-footer__menu">
-                    <span>APEx</span>
-
-                    <ul>
-                        <li><a href="#">About APEx</a></li>
-                        <li><a href="#">Latest news</a></li>
-                        <li><a href="#">Cases</a></li>
-                        <li><a href="#">Services</a></li>
-                    </ul>
-                </div>
-                <div class="c-footer__menu">
-                    <span>Support</span>
-
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#" target="_blank">Forum</a></li>
-                        <li><a href="#" target="_blank">Documentation</a></li>
-                    </ul>
-                </div>
-                <div class="c-footer__menu">
-                    <span>Solutions</span>
-
-                    <ul>
-                        <li><a href="#">Digitally display your EO Data</a></li>
-                        <li><a href="#">Digitally display your EO Data</a></li>
-                        <li><a href="#">Digitally display your EO Data</a></li>
-                        <li><a href="#">Digitally display your EO Data</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="c-footer__baseline">
+          Application Propagation Environments
         </div>
 
-        <div class="c-footer__legal">
-            <ul>
-                <li><a href="#">Cookies</a></li>
-                <li><a href="#">Terms & conditions</a></li>
-                <li><a href="#">Disclaimer</a></li>
-                <li><a href="#">Privacy statement</a></li>
-            </ul>
+        <div class="c-footer__socials">
+          <a href="#" class="c-footer__social">
+            <img src="/assets/img/logos/logo-linkedin.svg" alt="LinkedIn">
+          </a>
+          <a href="#" class="c-footer__social">
+            <img src="/assets/img/logos/logo-youtube.svg" alt="YouTube">
+          </a>
+          <a href="#" class="c-footer__social">
+            <img src="/assets/img/logos/logo-x.svg" alt="X">
+          </a>
         </div>
+
+        <a href="contact.html" class="btn btn-primary">
+          Contact us
+        </a>
+      </div>
+
+      <div class="c-footer__right">
+        <div class="c-footer__menu">
+          <span>APEx</span>
+
+          <ul>
+            <li><a href="#">About APEx</a></li>
+            <li><a href="#">Latest news</a></li>
+            <li><a href="#">Cases</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </div>
+        <div class="c-footer__menu">
+          <span>Support</span>
+
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" target="_blank">Forum</a></li>
+            <li><a href="#" target="_blank">Documentation</a></li>
+          </ul>
+        </div>
+        <div class="c-footer__menu">
+          <span>Solutions</span>
+
+          <ul>
+            <li><a href="#">Digitally display your EO Data</a></li>
+            <li><a href="#">Digitally display your EO Data</a></li>
+            <li><a href="#">Digitally display your EO Data</a></li>
+            <li><a href="#">Digitally display your EO Data</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-</footer>
+
+    <div class="c-footer__legal">
+      <ul>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">Terms & conditions</a></li>
+        <li><a href="#">Disclaimer</a></li>
+        <li><a href="#">Privacy statement</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 </body>
 </html>

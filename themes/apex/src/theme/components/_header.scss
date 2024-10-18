@@ -158,6 +158,10 @@
     text-decoration: none;
   }
 
+  li {
+    opacity: 1 !important;
+  }
+
   li.has-children > a {
     position: relative;
     padding-inline-end: 1.25rem;
