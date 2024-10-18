@@ -1,0 +1,14 @@
+name: Build Demo Theme
+
+on:
+  push:
+    paths:
+      - 'themes/demo/**'
+  workflow_dispatch:
+
+jobs:
+  call-build-theme:
+    uses: ./.github/workflows/build_theme.yml
+    with:
+      theme: demo
+    secrets: inherit
