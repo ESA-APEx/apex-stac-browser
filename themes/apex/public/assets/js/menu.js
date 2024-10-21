@@ -40,6 +40,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  new MegaMenu();
+  // Hamburger Menu Class
+  class HamburgerMenu {
+    constructor() {
+      const hamburgers = document.querySelectorAll('.js-hamburger');
+      const menu = document.querySelector('.js-hamburger-menu');
+      const body = document.body;
 
+      if (menu) {
+        hamburgers.forEach(hamburger => {
+          hamburger.addEventListener('click', (e) => this.handleClickHamburger(e, menu, body));
+        });
+      } else {
+
+      }
+    }
+
+    handleClickHamburger(e, menu, body) {
+      e.preventDefault();
+      menu.classList.toggle('open');
+      body.classList.toggle('has-hamburger-open');
+    }
+  }
+
+  new MegaMenu();
+  new HamburgerMenu();
 });
+
+

@@ -14,10 +14,6 @@ body {
     min-height: 100%;
     gap: $block-margin;
 
-    @include media-breakpoint-only(xxxl) {
-        max-width: 75vw;
-    }
-
     > header {
         padding-top: $block-margin;
 
