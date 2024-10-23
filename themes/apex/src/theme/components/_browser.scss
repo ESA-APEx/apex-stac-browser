@@ -197,4 +197,11 @@ $border-radius: 10px;
       }
     }
   }
+
+  .hide-text {
+    background-image: none !important;
+  }
+  .button-read-more span {
+    color: var(--darkblue) !important;
+  }
 }
