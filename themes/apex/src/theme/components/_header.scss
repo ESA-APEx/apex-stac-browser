@@ -54,6 +54,7 @@
     }
 
     input {
+      min-width: 600px;
       height: auto;
       width: 90%;
 
@@ -115,6 +116,11 @@
   @include media-breakpoint-up(lg) {
     padding-block: 0;
   }
+
+  a:hover {
+    text-decoration: none;
+    color: var(--white);
+  }
 }
 
 .c-header__logo {
@@ -129,6 +135,14 @@
   @include media-breakpoint-up(lg) {
     font-size: var(--text-3xl);
   }
+}
+
+.c-header__logo span {
+  display: block;
+  font-size: var(--text-base);
+  color: var(--white);
+  opacity: 0.5;
+  transition: all 0.2s;
 }
 
 .c-header__nav {
@@ -152,7 +166,7 @@
     display: block;
     padding-inline: 1rem;
     padding-block: 3.25rem;
-    color: var(--white);
+    color: var(--white) !important;
     font-size: var(--text-base);
     font-weight: 400;
     text-decoration: none;
@@ -192,4 +206,19 @@
   @include media-breakpoint-up(sm) {
     display: block;
   }
+}
+
+.btn--arrow {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn--arrow::after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-image: url('@/theme/assets/img/icons/arrow_right_alt.svg');
 }
