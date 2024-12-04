@@ -1,0 +1,14 @@
+.top-header {
+  background-color: var(--darkblue);
+  height: 70px;
+  > * {
+    height: 100%;
+  }
+
+  .esa-link {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}

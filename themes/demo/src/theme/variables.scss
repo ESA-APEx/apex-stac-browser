@@ -50,12 +50,12 @@ $logo-image: 'https://raw.githubusercontent.com/radiantearth/stac-site/master/im
 $logo-image-height: 100px;
 
 // Background and text default colors
-$body-bg: #264653;
-$body-color: #ffffff;
+$body-bg: var(--greylight);
+$body-color: var(--darkblue);
 
 // Colors
 $theme-colors: (
-  "primary":      #2a9d8f,
+  "primary":       #003247,
   "secondary":     #FFFFFF,
   "success":       #28a745,
   "info":          #09B3AD,
@@ -92,7 +92,7 @@ $h3-font-size: 1.4rem;
 $h4-font-size: 1.2rem;
 
 // Heading color
-$headings-color: null;
+$headings-color: var(--darkblue);
 
 // Links
 $link-color: map-get($theme-colors, "primary");
@@ -111,3 +111,19 @@ $border-radius: 0.25rem;
 
 // Max. icon size
 $max-icon-size: 32px;
+
+@font-face {
+  font-display: swap;
+  font-family: "ESANotes";
+  font-style: normal;
+  font-weight: 400;
+  src: url("@/theme/assets/fonts/NotesEsaReg.otf")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "ESANotes";
+  font-style: normal;
+  font-weight: 800;
+  src: url("@/theme/assets/fonts/NotesEsaBol.otf")
+}

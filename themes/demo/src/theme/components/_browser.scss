@@ -6,7 +6,7 @@ $border-radius: 10px;
 
   h1, h2, h3, h4, h5, h6 {
     &:not(.popover-header) {
-      color: var(--white);
+      color: var(--darkblue);
     }
   }
 
@@ -23,6 +23,10 @@ $border-radius: 10px;
   header {
     h1 {
       display: none;
+    }
+
+    .lead {
+      color:  var(--darkblue);
     }
   }
 
@@ -78,7 +82,7 @@ $border-radius: 10px;
 
   .expandable-card {
     .card-body {
-      background-color: var(--greylight) !important;
+      background-color: var(--white) !important;
     }
   }
 
