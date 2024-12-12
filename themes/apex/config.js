@@ -9,12 +9,6 @@ module.exports = {
       "summary": "This openEO service runs on the [Copernicus Data Space Ecosystem](https://dataspace.copernicus.eu/)\nand offers data access and processing on full archives of Copernicus data, such as the Sentinels.",
     },
     {
-      "id": 2,
-      "url": "https://gep-supersites-stac.terradue.com/",
-      "title": "GEP Supersites CSK and CSG data",
-      "summary": "GEP hosted CSK and CSG data for the Geohazard Supersites and Natural Laboratories GEO initiative",
-    },
-    {
       "id": 4,
       "url": "https://openeocloud.vito.be/openeo/1.0.0/",
       "title": "openEO Platform",
