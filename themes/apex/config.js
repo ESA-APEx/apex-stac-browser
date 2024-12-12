@@ -1,6 +1,38 @@
 module.exports = {
   catalogUrl: null,
   catalogTitle: "STAC Browser",
+  supportedCatalogues: [
+    {
+      "id": 1,
+      "url": "https://openeo.dataspace.copernicus.eu/openeo/1.2",
+      "title": "Copernicus Data Space Ecosystem (openEO)",
+      "summary": "This openEO service runs on the [Copernicus Data Space Ecosystem](https://dataspace.copernicus.eu/)\nand offers data access and processing on full archives of Copernicus data, such as the Sentinels.",
+    },
+    {
+      "id": 2,
+      "url": "https://gep-supersites-stac.terradue.com/",
+      "title": "GEP Supersites CSK and CSG data",
+      "summary": "GEP hosted CSK and CSG data for the Geohazard Supersites and Natural Laboratories GEO initiative",
+    },
+    {
+      "id": 3,
+      "url": "https://services.terrascope.be/stac/",
+      "title": "Terrascope",
+      "summary": "VITO Remote Sensing EO Data Catalogue for the Terrascope platform. Offers Sentinel-1/2/5P, PROBA-V, WorldCover, DEMs, CLS and more.",
+    },
+    {
+      "id": 4,
+      "url": "https://openeocloud.vito.be/openeo/1.0.0/",
+      "title": "openEO Platform",
+      "summary": "openEO platform provides intuitive programming libraries to process a wide variety of earth observation datasets. This large-scale data access and processing is performed on multiple infrastructures, which all support the openEO and STAC API.",
+    },
+    {
+      "id": 5,
+      "url": "https://eoresults.esa.int/stac",
+      "title": "ESA Project Results Repository",
+      "summary": "ESA Project Results Repository (PRR) hosting the results of the ESA Scientific Projects",
+    }
+  ],
   allowExternalAccess: true, // Must be true if catalogUrl is not given
   allowedDomains: [],
   detectLocaleFromBrowser: true,
