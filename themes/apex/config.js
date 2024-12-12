@@ -15,12 +15,6 @@ module.exports = {
       "summary": "GEP hosted CSK and CSG data for the Geohazard Supersites and Natural Laboratories GEO initiative",
     },
     {
-      "id": 3,
-      "url": "https://services.terrascope.be/stac/",
-      "title": "Terrascope",
-      "summary": "VITO Remote Sensing EO Data Catalogue for the Terrascope platform. Offers Sentinel-1/2/5P, PROBA-V, WorldCover, DEMs, CLS and more.",
-    },
-    {
       "id": 4,
       "url": "https://openeocloud.vito.be/openeo/1.0.0/",
       "title": "openEO Platform",
