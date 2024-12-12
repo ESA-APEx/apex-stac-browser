@@ -205,4 +205,10 @@ $border-radius: 10px;
   .button-read-more span {
     color: var(--darkblue) !important;
   }
+
+  .list-group-item {
+    a {
+      color: var(--lightgreen);
+    }
+  }
 }
