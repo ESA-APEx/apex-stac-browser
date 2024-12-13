@@ -9,16 +9,22 @@ module.exports = {
       "summary": "This openEO service runs on the [Copernicus Data Space Ecosystem](https://dataspace.copernicus.eu/)\nand offers data access and processing on full archives of Copernicus data, such as the Sentinels.",
     },
     {
-      "id": 4,
+      "id": 2,
       "url": "https://openeocloud.vito.be/openeo/1.0.0/",
       "title": "openEO Platform",
       "summary": "openEO platform provides intuitive programming libraries to process a wide variety of earth observation datasets. This large-scale data access and processing is performed on multiple infrastructures, which all support the openEO and STAC API.",
     },
     {
-      "id": 5,
+      "id": 3,
       "url": "https://eoresults.esa.int/stac",
       "title": "ESA Project Results Repository",
       "summary": "ESA Project Results Repository (PRR) hosting the results of the ESA Scientific Projects",
+    },
+    {
+      "id": 4,
+      "url": "https://cds.climate.copernicus.eu/api/catalogue/v1/",
+      "title": "Climate Data Store",
+      "summary": "The CADS catalogue API is a STAC compliant API to access the CADS catalogues.\\n\\nThe implementation is based on [Standalone Collections](https://github.com/radiantearth/stac-spec/blob/master/collection-spec/collection-spec.md#standalone-collections) while a custom extension is present to provide datasets search capabilities.",
     }
   ],
   allowExternalAccess: true, // Must be true if catalogUrl is not given
