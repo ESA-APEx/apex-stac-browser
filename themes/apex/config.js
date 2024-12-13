@@ -24,7 +24,7 @@ module.exports = {
       "id": 4,
       "url": "https://cds.climate.copernicus.eu/api/catalogue/v1/",
       "title": "Climate Data Store",
-      "summary": "The CADS catalogue API is a STAC compliant API to access the CADS catalogues.\\n\\nThe implementation is based on [Standalone Collections](https://github.com/radiantearth/stac-spec/blob/master/collection-spec/collection-spec.md#standalone-collections) while a custom extension is present to provide datasets search capabilities.",
+      "summary": "The CADS catalogue API is a STAC compliant API to access the CADS catalogues.The implementation is based on [Standalone Collections](https://github.com/radiantearth/stac-spec/blob/master/collection-spec/collection-spec.md#standalone-collections) while a custom extension is present to provide datasets search capabilities.",
     }
   ],
   allowExternalAccess: true, // Must be true if catalogUrl is not given
