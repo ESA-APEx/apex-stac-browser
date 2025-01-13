@@ -1,6 +1,10 @@
 
 body {
   background-color: var(--darkblue);
+  padding-top: 16px !important;
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+  line-height: var(--bs-body-line-height) !important;
 }
 
 body, h1, h2, h3, h4, h5, h6 {
@@ -46,4 +50,9 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .visually-hidden {
   display: none;
+}
+
+div.container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }

@@ -116,11 +116,6 @@
   @include media-breakpoint-up(lg) {
     padding-block: 0;
   }
-
-  a:hover {
-    text-decoration: none;
-    color: var(--white);
-  }
 }
 
 .c-header__logo {
@@ -134,6 +129,11 @@
 
   @include media-breakpoint-up(lg) {
     font-size: var(--text-3xl);
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: var(--white);
   }
 }
 
@@ -161,7 +161,7 @@
     margin: 0;
   }
 
-  a {
+  a.menu-link {
     position: relative;
     display: block;
     padding-inline: 1rem;
@@ -170,10 +170,6 @@
     font-size: var(--text-base);
     font-weight: 400;
     text-decoration: none;
-  }
-
-  li {
-    opacity: 1 !important;
   }
 
   li.has-children > a {
