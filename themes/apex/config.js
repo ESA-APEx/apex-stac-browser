@@ -82,7 +82,7 @@ module.exports = {
     type: 'openIdConnect',
     openIdConnectUrl: 'https://auth.apex.esa.int/realms/apex/.well-known/openid-configuration',
     oidcConfig: {
-      client_id: 'apex-catalogue-dev-browser'
+      client_id: 'apex-catalogue-prod-browser'
     }
   }
 };
