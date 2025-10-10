@@ -11,16 +11,13 @@ $border-radius: 10px;
     }
   }
 
-  h1 {
-    .title {
-      font-size: var(--text-3xl);
-      font-weight: normal;
-    }
-  }
-
-  h2 {
+  .title {
     font-size: var(--text-2xl);
-    font-weight: normal !important;
+    font-weight: normal;
+    text-align: center;
+    span[role=banner] {
+      margin-right: 1rem;
+    }
   }
 
 
