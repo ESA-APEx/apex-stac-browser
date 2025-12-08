@@ -55,8 +55,7 @@ jobs:
         env:
           REPO_URL: https://github.com/radiantearth/stac-browser.git
         run: |
-          git clone $REPO_URL $TEMP_FOLDER
-          git checkout tags/${{inputs.base_version}}
+          git clone --branch ${{inputs.base_version}} $REPO_URL $TEMP_FOLDER
 
       - name: Copy theme to external repository
         run: |
