@@ -11,4 +11,5 @@ jobs:
     uses: ./.github/workflows/build_theme.yml
     with:
       theme: apex
+      base_version: 'v3.3.5'
     secrets: inherit
