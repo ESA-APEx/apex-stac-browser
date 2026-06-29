@@ -3,13 +3,13 @@ name: Build Demo Theme
 on:
   push:
     paths:
-      - 'themes/demo/**'
+      - 'themes/project/**'
   workflow_dispatch:
 
 jobs:
   call-build-theme:
     uses: ./.github/workflows/build_theme.yml
     with:
-      theme: demo
+      theme: project
       base_version: 'v4.0.0'
     secrets: inherit
