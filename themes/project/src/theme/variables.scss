@@ -3,24 +3,8 @@
 // Most of the variables below are Bootstrap variables, see https://getbootstrap.com/docs/4.0/getting-started/theming/ for details.
 // For simplicity we just provide some common options as default, but you can override all Bootstrap Sass variables.
 
-:root {
-  --apex-background-color: #F3F7F8;
-  --apex-foreground-color: #003247;
-
-  --apex-primary-background-color: #003247; 
-  --apex-primary-foreground-color: white;
-
-  --apex-secondary-background-color: #00AE9D;
-  --apex-secondary-foreground-color: white;
-
-  --apex-disabled-background-color: var(--lightgray);
-  --apex-disabled-foreground-color: var(--darkgray);
-
-  // Auto Generated
-  --apex-card-background-color: color-mix(in srgb, var(--apex-background-color) 10%, white);
-  --apex-primary-hover-color: color-mix(in srgb, var(--apex-primary-background-color) 90%, black);
-  --apex-secondary-hover-color: color-mix(in srgb, var(--apex-secondary-background-color) 90%, black);
-}
+// The APEx colors are loaded in through the 'apex-brand-loader.js' script, which is included in the 'index.html' file. 
+// The colors are then available as CSS variables, which we can use in our SCSS code below.
 
 :root {
   --text-4xl: 3.1875rem;
