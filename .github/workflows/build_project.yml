@@ -1,4 +1,4 @@
-name: Build Demo Theme
+name: Build Projects Theme
 
 on:
   push:
