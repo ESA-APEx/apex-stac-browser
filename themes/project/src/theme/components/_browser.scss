@@ -118,7 +118,7 @@ $border-radius: 10px;
     }
 
     .datetime {
-      color: var(--apex-primary-foreground-color);
+      color: var(--apex-foreground-color);
       font-style: italic;
     }
 
@@ -138,7 +138,7 @@ $border-radius: 10px;
     color: var(--apex-secondary-foreground-color);
 
    
-    &.btn-asset {
+    &.btn-asset, &.btn-provider {
       color: var(--apex-foreground-color);
     }
 
