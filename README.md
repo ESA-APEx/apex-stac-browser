@@ -47,13 +47,21 @@ sh scripts/build.sh <THEME> <VERSION>
 docker run --rm -p 8080:8080 \
   -e SB_catalogUrl=<CATALOGUE_URL> \
   -e SB_catalogTitle=<TITLE> \
-  --name apex-stac-browser apex-apex-stac-browser
+  --name apex-stac-browser apex-<THEME>-stac-browser
 ```
 
 | Parameter     | Description                                             |
 |---------------|---------------------------------------------------------|
 | CATALOGUE URL | HTTPS URL of STAC catalogue to visualize in the browser | 
 | TITLE         | Name of the catalogue to show in the browser            |
+
+Example:
+```bash
+docker run --rm -p 8080:8080 \
+  -e SB_catalogUrl="https://catalogue.demo.apex.esa.int/" \
+  -e SB_catalogTitle="Test Catalogue" \
+  --name apex-stac-browser apex-project-stac-browser
+```
 
 More information and additional parameters are available on
 the [STAC browser](https://github.com/radiantearth/stac-browser) page.
