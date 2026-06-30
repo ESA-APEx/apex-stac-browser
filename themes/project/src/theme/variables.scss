@@ -3,34 +3,26 @@
 // Most of the variables below are Bootstrap variables, see https://getbootstrap.com/docs/4.0/getting-started/theming/ for details.
 // For simplicity we just provide some common options as default, but you can override all Bootstrap Sass variables.
 
+:root {
+  --apex-background-color: #F3F7F8;
+  --apex-foreground-color: #003247;
+
+  --apex-primary-background-color: #003247; 
+  --apex-primary-foreground-color: white;
+
+  --apex-secondary-background-color: #00AE9D;
+  --apex-secondary-foreground-color: white;
+
+  --apex-disabled-background-color: var(--lightgray);
+  --apex-disabled-foreground-color: var(--darkgray);
+
+  // Auto Generated
+  --apex-card-background-color: color-mix(in srgb, var(--apex-background-color) 10%, white);
+  --apex-primary-hover-color: color-mix(in srgb, var(--apex-primary-background-color) 90%, black);
+  --apex-secondary-hover-color: color-mix(in srgb, var(--apex-secondary-background-color) 90%, black);
+}
 
 :root {
-  // colors
-  --darkblue: #003247;
-  --lightblue: #00619E;
-  --green: #008E7A;
-  --lightgreen: #00AE9D;
-  --yellow: #FBAB18;
-  --orange: #F47920;
-  --body-bg: #043346;
-
-  --white: #fff;
-  --black: #000;
-  --light: #e7e7e7;
-  --greylight: #F3F7F8;
-  --stroke: #dcdcdc;
-
-  --underline: #CCD6DA;
-
-  // Colors in rgb
-  --darkblue-rgb: 0, 50, 71;
-  --lightblue-rgb: 0, 97, 158;
-  --green-rgb: 0, 142, 122;
-  --lightgreen-rgb: 0, 174, 157;
-  --yellow-rgb: 251, 171, 24;
-  --orange-rgb: 244, 121, 32;
-  --light-rgb: 231, 231, 231;
-
   --text-4xl: 3.1875rem;
   --text-3xl: 2.375rem;
   --text-2xl: 1.75rem;
@@ -50,8 +42,7 @@ $logo-image: 'https://raw.githubusercontent.com/radiantearth/stac-site/master/im
 $logo-image-height: 100px;
 
 // Background and text default colors
-$body-bg: var(--greylight);
-$body-color: var(--darkblue);
+$body-color: var(--apex-foreground-color);
 
 // Colors
 $theme-colors: (
@@ -92,7 +83,7 @@ $h3-font-size: 1.4rem;
 $h4-font-size: 1.2rem;
 
 // Heading color
-$headings-color: var(--darkblue);
+$headings-color:  var(--apex-foreground-color);
 
 // Links
 $link-color: map-get($theme-colors, "primary");

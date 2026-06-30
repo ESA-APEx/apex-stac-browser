@@ -1,12 +1,12 @@
 .top-header {
-  background-color: var(--darkblue);
+  background-color: var(--apex-primary-background-color);
   height: 70px;
   > * {
     height: 100%;
   }
 
   .esa-link {
-    color: white;
+    color: var(--apex-primary-foreground-color);
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
