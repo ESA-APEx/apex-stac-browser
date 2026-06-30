@@ -41,7 +41,8 @@ $logo: 'none';
 $logo-image: 'https://raw.githubusercontent.com/radiantearth/stac-site/master/images/logo/stac-030-long.png';
 $logo-image-height: 100px;
 
-// Background and text default colors
+// Background and text default .3colors
+$body-bg: var(--apex-background-color);
 $body-color: var(--apex-foreground-color);
 
 // Colors
