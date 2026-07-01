@@ -4,9 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta id="meta-description" name="description" content="">
+    <meta name="description" id="meta-description" content="">
+    <meta name="og:type" content="website">
+    <meta name="og:url" id="og-url" content="<%= htmlWebpackPlugin.options.url %>">
+    <meta property="og:title" id="og-title" content="<%= htmlWebpackPlugin.options.title %>"/>
+    <meta name="og:description" id="og-description" content="">
+    <meta name="og:locale" id="og-locale" content="en">
+    <meta name="og:site_name" content="<%= htmlWebpackPlugin.options.title %>">
     <script src="/apex-config.js" ></script>
     <script src="/apex-brand-loader.js" defer></script>
+    <script src="/apex-nav-loader.js" defer></script>
     <!-- <script defer="defer" src="/config.js"></script> -->
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
@@ -16,7 +23,8 @@
     </noscript>
     <header class="top-header">
       <div class="container d-flex justify-content-between align-items-center">
-        <div><a href="/" target="_blank" rel="noopener noreffer" class="esa-link">The European Space Agency</a> </div> <img src="/assets/img/logos/logo-esa.svg" alt="esa-logo">
+        <div><a href="/" target="_blank" rel="noopener noreffer" class="esa-link">The European Space Agency</a> </div>
+        <img src="/assets/img/logos/logo-esa.svg" alt="esa-logo">
       </div>
     </header>
     <div id="stac-browser"></div>

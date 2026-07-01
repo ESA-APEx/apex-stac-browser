@@ -2,7 +2,6 @@ $callout-bg: rgba(255, 255, 255, 0.16);
 $border-radius: 10px;
 
 #stac-browser {
-  padding-top: 2.5rem;
 
   h1, h2, h3, h4, h5, h6 {
     &:not(.popover-header) {
@@ -129,7 +128,7 @@ $border-radius: 10px;
   }
 
   input {
-    padding: 1rem;
+    padding: 1.125rem;
     line-height: 1.2;
   }
 

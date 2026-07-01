@@ -21,13 +21,11 @@ body {
   gap: $block-margin;
 
   @include media-breakpoint-only(xxxl) {
-    max-width: 75vw;
+    max-width: 1320px;
   }
 
   > header {
     .site {
-      border-bottom: 3px solid map-get($theme-colors, "primary");
-
       > .col-md-12 {
         > .title {
           > span {

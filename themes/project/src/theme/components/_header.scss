@@ -10,5 +10,90 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
+    margin-left: 5px;
+  }
+
+  .container {
+    max-width: 1320px;
+  }
+}
+
+#apex-main-nav {
+  padding: 0.5rem 0 !important;
+
+  .container-fluid {
+    padding: 0px 12px !important;
+  }
+
+  .block-search {
+    display: none;
+  }
+  &.bg-white {
+    background-color: transparent !important;
+  }
+
+  .navbar-nav li.nav-item:last-child {
+    margin-left: auto;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    flex-grow: 1;
+    align-items: center;
+  }
+
+  .navbar-expand-lg {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 8px 0px !important;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    margin-left: 2.5rem;
+    margin-top: 12px;
+    min-height: 62px;
+    width: 100%;
+  }
+
+  .navbar-nav li.nav-item:last-child a {
+    background-color: var(--apex-primary-background-color);
+    color: var(--apex-primary-foreground-color);
+    border-color: var(--apex-primary-background-color);
+    border-style: solid;
+    border-width: 1px;
+    font-weight: 700;
+    font-family: NotesEsa, -apple-system, "system-ui", "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
+    border-radius: 39px;
+    padding: 17px 30px;
+    font-size: 0.875rem !important;
+    line-height: 21px !important;
+    transform: translateY(-5px);
+  }
+
+  .border-primary {
+    --bs-border-opacity: 1;
+    border-color: var(--apex-primary-background-color) !important;
+  }
+
+  &.border-2 {
+    border-width: 2px !important;
+  }
+  .navbar-nav .nav-link {
+    margin: 0 0.5rem;
+  }
+  .navbar-brand {
+    display: inline !important;
+    padding: 0 !important;
+    margin: 0 !important;
+
+    .site-logo {
+      height: auto !important;
+      max-height: 90px !important;
+      width: 123.36px !important;
+      max-width: 123.36px !important;
+    }
   }
 }
