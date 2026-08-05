@@ -11,5 +11,5 @@ jobs:
     uses: ./.github/workflows/build_theme.yml
     with:
       theme: project
-      base_version: 'v4.0.0'
+      base_version: 'v4.0.1'
     secrets: inherit
