@@ -417,6 +417,11 @@ body {
     }
   }
 
+  // Hide all ANACONDA collection cards by matching the prefix in the rendered card link.
+  .catalog-card:has(.stac-link[href*="/collections/ANACONDA"]) {
+    display: none !important;
+  }
+
   .card-list {
     display: flex;
     flex-direction: column;
